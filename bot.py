@@ -1,10 +1,11 @@
 import logging
 import asyncio
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-TOKEN = "7709053427:AAEwvhQdE23VJyG3nhHYybjg1-t4ePMa6NQ"
+os.getenv("TELEGRAM_BOT_TOKEN")
 MODERATION_CHAT_ID = -1002303863795  # ID чата модерации
 PUBLIC_CHANNEL_ID = -1002605169969   # ID канала Lawyers.Club
 TELEGRAPH_LINK = "https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-03-14-4"
