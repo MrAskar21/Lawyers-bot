@@ -10,7 +10,7 @@ MODERATION_CHAT_ID = -1002303863795  # ID чата модерации
 PUBLIC_CHANNEL_ID = -1002605169969   # ID канала Lawyers.Club
 TELEGRAPH_LINK = "https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-03-14-4"
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=getenv)
 dp = Dispatcher()
 
 logging.basicConfig(level=logging.INFO)
